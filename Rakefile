@@ -1,7 +1,7 @@
-desc "compile and run the site"
+desc "compile, watch, and run the site"
 task :run do
   pids = [
-    spawn("jekyll --auto --server"), # put `auto: true` in your _config.yml
+    spawn("jekyll --auto --server"),
   ]
  
   trap "INT" do
